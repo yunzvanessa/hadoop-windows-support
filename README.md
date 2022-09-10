@@ -107,6 +107,9 @@ Expected version ">= 12.0.0".
 
 In file `C:\hadoop\hadoop-yarn-project\hadoop-yarn\hadoop-yarn-applications\hadoop-yarn-applications-catalog\hadoop-yarn-applications-catalog-webapp\pom.xml`, change `nodeVersion` to `v16.17.0`
 
+## Note
+For `hadoop.dll` and `winutil.exe` to work on windows, full permissions need to be granted to these binaries before committing. On windows, to correctly grant full permissions, right click on the file, select `proeprties -> security -> advanced`. Then give `read, write and execute `permissions to all users. Using `chmod 777` will not work.
+
 ## Reference
 - [https://github.com/kontext-tech/winutils]()
 - [https://www.jianshu.com/p/1b4cbabfd899]() (Simplified Chinese)
