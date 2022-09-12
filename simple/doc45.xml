@@ -1,0 +1,17 @@
+<books>
+  <book>
+    <title>EEE Pray Love</title>
+    <year>1998</year>
+    <publisher>Johnson-Publishing</publisher>
+  </book>
+  <book>
+    <title>YYY Mind</title>
+    <year>1984</year>
+    <publisher>Ohern</publisher>
+  </book>
+  <book>
+    <title>XXX Am Sam</title>
+    <year>2002</year>
+    <publisher>Warner Brothers</publisher>
+  </book>
+</books>

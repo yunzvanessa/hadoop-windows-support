@@ -1,0 +1,32 @@
+<cars>
+  <car>
+    <model>Eclipse</model>
+    <year>1998</year>
+    <maker>Mitsubishi</maker>
+  </car>
+  <car>
+    <model>Camry</model>
+    <year>1998</year>
+    <maker>Toyota</maker>
+  </car>
+  <car>
+    <model>Sonata</model>
+    <year>2004</year>
+    <maker>Hyundia</maker>
+  </car>
+  <car>
+    <model>280z</model>
+    <year>1979</year>
+    <maker>Datsun</maker>
+  </car>
+  <car>
+    <model>Chevy</model>
+    <year>1957</year>
+    <maker>Ford</maker>
+  </car>
+  <car>
+    <model>Scope</model>
+    <year>1998</year>
+    <maker>Saturn</maker>
+  </car>
+</cars>
