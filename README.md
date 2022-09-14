@@ -36,7 +36,7 @@ Apache Hadoop repo:
 https://github.com/apache/hadoop
 ```
 
-Under the cloned directory `HADOOP_HOME`, run the following command:
+Under the cloned directory `HADOOP_HOME`, run the following command in Visual Studio x64 Win64 Command Prompt (2010) :
 
 ```
 mvn package -Pdist,native-win -DskipTests -Dtar -Dmaven.javadoc.skip=true
@@ -56,6 +56,8 @@ mvn package -Pdist,native-win -DskipTests -Dtar -Dmaven.javadoc.skip=true
 - Windows SDK 7.1
 - zlib-1.2.3
 - git 2.21.0
+
+The following two dependencies may not be needed
 - node 16.17.0
 - npm 8.15.0
 
@@ -109,7 +111,7 @@ In file `C:\hadoop\hadoop-yarn-project\hadoop-yarn\hadoop-yarn-applications\hado
 
 ## Note
 - For `hadoop.dll` and `winutil.exe` to work on windows, full permissions need to be granted to these binaries before committing. On windows, to correctly grant full permissions, right click on the file, select `proeprties -> security -> advanced`. Then give `read, write and execute `permissions to all users. Using `chmod 777` will not work.
-- If you still run into `java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z`,there may be some dlls missing. Try running `winutils.exe` and look at the error message. For the hadoop.dll compiled here, we need `msvcr100.dll`. This dll needs to be added on the path where `hadoop.dll` is.
+- If you still run into `java.lang.UnsatisfiedLinkError: org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Ljava/lang/String;I)Z`,there may be some dlls missing. Try running `winutils.exe` and look at the error message. For the hadoop.dll compiled here, `msvcr100.dll` needs to be added on the path where `hadoop.dll` is.
 - You can also install process monitor and dependency walker for analyzing.
 
 ## Reference
